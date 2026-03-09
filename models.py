@@ -43,3 +43,20 @@ class Transaction:
 
     def computeTotal(self):
         return sum(item.price for item in self.selectedItems)
+    
+
+# if __name__ == "__main__":
+#     burger = FoodItem("Spicy Burger", 10.0, "Food", 4.7)
+#     soda = FoodItem("Large Soda", 5.0, "Drinks", 4.2)
+#     cake = FoodItem("Chocolate Cake", 6.0, "Desserts", 4.9)
+
+#     menu = Menu([burger, soda, cake])
+#     order = Transaction([burger, soda])
+#     customer = Customer("Dilan", [order])
+
+#     print(customer.name)
+#     print(customer.purchaseHistory)
+#     print(menu.filterByCategory("Drinks"))
+#     print(menu.sortByPrice())
+#     print(menu.sortByPopularity())
+#     print(order.computeTotal())
